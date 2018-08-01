@@ -26,7 +26,7 @@
             <div class="visualizacao">
                 <span>Media Dia: <input type="text" id='displayMedia' readonly="true"></span><br>
                 <span>Media Meta: <input type="text" id='displayMeta' readonly="true"></span><br>
-                <span>Valor da Faixa:<input type="text" id='faixaValor' readonly="true"> </span>
+                <span>Valor da Faixa:<input type="text" id='faixaValor' readonly="true"></span>
                 
             </div>
 
@@ -35,10 +35,11 @@
             <input id="goal" class="interno" type="number" min="1" placeholder="Meta Acionamentos Dia"><br>
             <input id="daysRemaining" class="interno" type="number" min="0" max="30" placeholder="Dias Restantes"><br>
         </div>
-        
-        <input id="calc" onclick="calc()" type="submit" value="Calcular">
-        <input type="reset" onclick="reset()" value="Reset">
-    
+
+        <div id="button">
+            <input id="calc" onclick="calc()" type="submit" value="Calcular">
+            <input type="reset" onclick="reset()" value="Reset">
+        </div>
     </div>
 
 
