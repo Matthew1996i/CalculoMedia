@@ -41,17 +41,17 @@ body{
 
 ul li{
     cursor: pointer;
-    padding: 7px;
+    padding: 4px;
     width: 100%;
-    border-bottom:1px solid #000;
+    border-bottom:1px solid rgba(0, 0, 0, 0.315);
 }
 
 #formProAtivo{
-    width:500px;
+    width:700px;
     padding: 5px;
     font-size: 30px;
     margin:0 auto;
-   /* border: 1px solid red;*/
+    /*border: 1px solid red;*/
 }
 
 .numbersArea input{
@@ -75,13 +75,23 @@ ul li{
 }
 
 .visualizacao{
-    display:inline-table;
+    display: inline-block;
     width:100%;
     padding-bottom: 50px;
-    
+   /* border: 1px solid orange;*/
 }
 
 .visualizacao span{
-    display: block;
+    font-size: 40px;
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
    /* border: 1px solid red;*/
 }
+
+.visualizacao span input{
+    font-size: 40px;
+    color:rgb(189, 189, 189);
+}
+
