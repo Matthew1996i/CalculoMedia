@@ -14,7 +14,8 @@ body{
 
 #menu span{
     cursor: pointer;
-    width: 160px;
+    font-size: 30px;
+    width: 270px;
     display: block;
     margin-bottom: 5px;
     padding: 3px 16px;
@@ -23,10 +24,11 @@ body{
 
 .dropdown-content {
     display: none;
+    font-size: 30px;
     position: absolute;
     top: 13px;
     background-color: #F1C232;
-    width: 160px;
+    width: 270px;
     padding: 3px 16px;
     z-index: 1;
     list-style: none;
@@ -47,14 +49,29 @@ ul li{
 #formProAtivo{
     width:500px;
     padding: 5px;
+    font-size: 30px;
     margin:0 auto;
    /* border: 1px solid red;*/
 }
 
 .numbersArea input{
-    font-size: 18px;
+    font-size: 30px;
     display: block;
-    min-width: 300px;
+    min-width: 100%;
+}
+
+#button{
+    /*border: 1px solid red;*/
+    margin:0 auto;
+    padding: 5px;
+    width: 350px;
+}
+
+#button input{
+    margin: 0 10px;
+    display: inline-table;
+    font-size: 30px;
+    width: 150px;
 }
 
 .visualizacao{
@@ -64,4 +81,7 @@ ul li{
     
 }
 
-
+.visualizacao span{
+    display: block;
+   /* border: 1px solid red;*/
+}
