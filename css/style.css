@@ -1,13 +1,14 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #dddddd;
 }
 
 #menu {
     position: relative;
     display: inline-block;
     margin: 5px 5px 50px 5px;
-    background-color: #fffb00;
+    background-color: #F1C232 ;
     
 }
 
@@ -24,7 +25,7 @@ body{
     display: none;
     position: absolute;
     top: 13px;
-    background-color: #fffb00;
+    background-color: #F1C232;
     width: 160px;
     padding: 3px 16px;
     z-index: 1;
@@ -40,11 +41,27 @@ ul li{
     cursor: pointer;
     padding: 7px;
     width: 100%;
-    border-bottom:1px solid #fff;
+    border-bottom:1px solid #000;
 }
 
 #formProAtivo{
     width:500px;
+    padding: 5px;
+    margin:0 auto;
    /* border: 1px solid red;*/
 }
+
+.numbersArea input{
+    font-size: 18px;
+    display: block;
+    min-width: 300px;
+}
+
+.visualizacao{
+    display:inline-table;
+    width:100%;
+    padding-bottom: 50px;
+    
+}
+
 
