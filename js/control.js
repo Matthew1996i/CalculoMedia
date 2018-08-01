@@ -54,3 +54,13 @@ function reset(){
     document.getElementById('goal').value = ''
     document.getElementById('daysRemaining').value = ''
 }
+
+
+function resolution(){
+    let altura = window.innerHeight
+    let largura = window.innerWidth
+    alert(`A altura da janela é ${altura}
+    e a Largura é ${largura}`)
+}
+
+resolution()
