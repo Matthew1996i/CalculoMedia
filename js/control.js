@@ -14,8 +14,8 @@ function calc(e){
    
     const calcTrabalho = ()=>{
         if(diasTrabalhados && quantidade >= 1){
-            document.getElementById('displayMedia').value = `${Math.floor(mediaProdutividade)} Acionamentos`
-            document.getElementById('displayMeta').value = ` ${Math.floor(projecao)} em ${diasRestantes} Dias/ ${percentualProjecao.toFixed(2)}% da Meta` 
+            document.getElementById('displayMedia').value = `${Math.floor(mediaProdutividade)} Acionamentos/Dia`
+            document.getElementById('displayMeta').value = ` ${Math.floor(projecao)} em ${diasRestantes} Dias - ${percentualProjecao.toFixed(2)}% da Meta` 
         }else{
             document.getElementById('displayMedia').value = `Valores Inválidos`
             alert(`Preencha Dias Trabalhados e Acionamentos com Valores Validos`)
