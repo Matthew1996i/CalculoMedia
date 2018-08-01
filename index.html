@@ -8,24 +8,37 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="menu">
+        <span>Selecione sua Rota</span>
+        <ul class="dropdown-content">
+            <li>Receptivo</li>
+            <li>ProAtivo</li>
+            <li>D-0</li>
+            <li>72Hrs</li>
+            <li>Multi</li>
+        </ul>
+    </div>
 
-    <div id="entradaUser">
-        <form class="form">
-            <div class="numbersArea">
+    <div id="formProAtivo">
+        
+        <div class="numbersArea">
 
-                <div class="visualizacao">
-                    <span>Media Dia: </span><input type="text" readonly="true">
-                    <span>Media Meta: </span><input type="text" readonly="true">
-                </div>
-
-                <input id="workedDays" class="interno" type="number" min="1" max="30" placeholder="Dias Trabalhados" >
-                <input id="amount" class="interno" type="number" min="1" placeholder="Acionamentos">
-                <input id="goal" class="interno" type="number" min="1" placeholder="Meta Acionamentos">
-                <input id="daysRemaining" class="interno" type="number" min="1" max="30" placeholder="Dias Restantes">
+            <div class="visualizacao">
+                <span>Media Dia: </span><input type="text" id='displayMedia' readonly="true"><br>
+                <span>Media Meta: </span><input type="text" id='displayMeta' readonly="true"><br>
+                <span>Valor da Faixa: </span><input type="text" id='faixaValor' readonly="true">
+                
             </div>
-                <input id="calc" onclick="calc" type="submit" value="Calcular">
-                <input type="reset" value="Reset">
-        </form>
+
+            <input id="workedDays" class="interno" type="number" min="1" max="30" placeholder="Dias Trabalhados" ><br>
+            <input id="amount" class="interno" type="number" min="1" placeholder="Acionamentos"><br>
+            <input id="goal" class="interno" type="number" min="1" placeholder="Meta Acionamentos Dia"><br>
+            <input id="daysRemaining" class="interno" type="number" min="0" max="30" placeholder="Dias Restantes"><br>
+        </div>
+        
+        <input id="calc" onclick="calc()" type="submit" value="Calcular">
+        <input type="reset" onclick="reset()" value="Reset">
+    
     </div>
 
 
