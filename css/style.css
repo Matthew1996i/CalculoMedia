@@ -1,3 +1,50 @@
-.numbersArea .interno{
-    width: 200px;
+body{
+    margin: 0;
+    padding: 0;
 }
+
+#menu {
+    position: relative;
+    display: inline-block;
+    margin: 5px 5px 50px 5px;
+    background-color: #fffb00;
+    
+}
+
+#menu span{
+    cursor: pointer;
+    width: 160px;
+    display: block;
+    margin-bottom: 5px;
+    padding: 3px 16px;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 13px;
+    background-color: #fffb00;
+    width: 160px;
+    padding: 3px 16px;
+    z-index: 1;
+    list-style: none;
+}
+
+#menu:hover .dropdown-content {
+    display: block;
+    
+}
+
+ul li{
+    cursor: pointer;
+    padding: 7px;
+    width: 100%;
+    border-bottom:1px solid #fff;
+}
+
+#formProAtivo{
+    width:500px;
+    border: 1px solid red;
+}
+
