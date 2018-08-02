@@ -2,12 +2,23 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:500,700');
 
+/*
+    Fontes para usar no codigo:
+
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+
+
+
+*/
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
+    font-family: 'Roboto', sans-serif;
     background-color: #dddddd;
 }
 
@@ -62,7 +73,6 @@ ul li{
 }
 
 #formProAtivo{
-    width:700px;
     padding: 5px;
     font-size: 30px;
     margin:0 auto;
@@ -90,27 +100,42 @@ ul li{
     display: inline-table;
     font-size: 50px;
     width: 250px;
+    color:#000;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(141, 141, 141);
+    border-radius:5px;
 }
 
 .visualizacao{
     display: inline-block;
-    width:100%;
     padding-bottom: 50px;
-   /* border: 1px solid orange;*/
+    /*border: 1px solid orange;*/
 }
 
 .visualizacao span{
-    font-size: 50px;
+    font-size: 45px;
     display: inline-block;
-    width: 100%;
     padding: 5px;
     margin-bottom: 5px;
    /* border: 1px solid red;*/
+    
 }
 
-.visualizacao span input{
-    font-size: 60px;
+.visualizacao div{
+   /* border: 1px solid red;*/
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+.visualizacao input{
+    float: right;
+    width: 610px; 
+    height:70px;
+    font-size: 50px;
     color:rgb(189, 189, 189);
+    background-color: rgb(255, 255, 255);
+    border: none;
 }
 
 #spanRota{
