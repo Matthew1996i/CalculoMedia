@@ -11,40 +11,45 @@
     <div id="menu">
         <span>Selecione sua Rota</span>
         <ul class="dropdown-content">
-            <li>Receptivo</li>
-            <li>ProAtivo</li>
-            <li>D-0</li>
-            <li>72Hrs</li>
-            <li>Multi</li>
+            <li id="receptivo">Receptivo</li>
+            <li id="proAtivo">ProAtivo</li>
+            <li id="d0">D-0</li>
+            <li id="72Horas">72Hrs</li>
+            <li id="multi">Multi</li>
         </ul>
     </div>
 
-    <div id="formProAtivo">
+    <div><span id="spanRota">{ Rota }</span></div>
+    
+
+
+    <div id="formulariosRotas">
         
-        <div class="numbersArea">
+        <div id="formProAtivo">
+            
+            <div class="numbersArea">
 
-            <div class="visualizacao">
-                <span>Media Dia: <input type="text" id='displayMedia' readonly="true"></span><br>
-                <span>Media Meta: <input type="text" id='displayMeta' readonly="true"></span><br>
-                <span>Valor da Faixa:<input type="text" id='faixaValor' readonly="true"></span>
-                
+                <div class="visualizacao">
+                    <span>Media Dia: <input type="text" id='displayMedia' readonly="true"></span><br>
+                    <span>Media Meta: <input type="text" id='displayMeta' readonly="true"></span><br>
+                    <span>Valor da Faixa:<input type="text" id='faixaValor' readonly="true"></span>
+                </div>
+
+                <div id="entradaUser">
+                    <input id="workedDays" class="interno" type="number" min="1" max="30" placeholder="Dias Trabalhados" ><br>
+                    <input id="amount" class="interno" type="number" min="1" placeholder="Acionamentos"><br>
+                    <input id="goal" class="interno" type="number" min="1" placeholder="Meta Acionamentos Dia"><br>
+                    <input id="daysRemaining" class="interno" type="number" min="0" max="30" placeholder="Dias Restantes"><br>
+                </div>
             </div>
 
-            <div id="entradaUser">
-                <input id="workedDays" class="interno" type="number" min="1" max="30" placeholder="Dias Trabalhados" ><br>
-                <input id="amount" class="interno" type="number" min="1" placeholder="Acionamentos"><br>
-                <input id="goal" class="interno" type="number" min="1" placeholder="Meta Acionamentos Dia"><br>
-                <input id="daysRemaining" class="interno" type="number" min="0" max="30" placeholder="Dias Restantes"><br>
+            <div id="button">
+                <input id="calc" onclick="calc()" type="submit" value="Calcular">
+                <input type="reset" onclick="reset()" value="Reset">
             </div>
         </div>
 
-        <div id="button">
-            <input id="calc" onclick="calc()" type="submit" value="Calcular">
-            <input type="reset" onclick="reset()" value="Reset">
-        </div>
     </div>
-
-
 
 
 </body>
