@@ -31,10 +31,12 @@ function calc(e){
         }else if(mediaProdutividade >= 45 && mediaProdutividade <=49){
             document.getElementById('faixaValor').value = `R$ 80,00`
 
-        }else if(mediaProdutividade >= 50 && mediaProdutividade <= 70){
+        }else if(mediaProdutividade >= 50 && mediaProdutividade <= 56){
             document.getElementById('faixaValor').value = `R$ 120,00`
 
-        }else{
+        }else if(mediaProdutividade >= 57){
+            document.getElementById('faixaValor').value = `R$ 150,00`
+        }else {
             document.getElementById('faixaValor').value = `R$ 00,00`
         }
     }
@@ -56,11 +58,11 @@ function reset(){
 }
 
 
-function resolution(){
+/*function resolution(){
     let altura = window.innerHeight
     let largura = window.innerWidth
     alert(`A altura da janela é ${altura}
     e a Largura é ${largura}`)
 }
 
-resolution()
+resolution()*/
