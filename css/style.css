@@ -195,6 +195,7 @@ ul li{
 /*                        Edição do Formulario Receptivo                     */
 
 #formReceptivo{
+    display:none;
     width: 100%;
     font-size:50px;
 }
