@@ -50,7 +50,9 @@ function mostrarMenu(e){
     document.getElementById('openMenu').style.display = 'block'
 }
 
-
+function esconderMenu(){
+    document.getElementById('openMenu').style.display = 'none'
+}
 
 function reset(){
     document.getElementById('displayMedia').value = ''
