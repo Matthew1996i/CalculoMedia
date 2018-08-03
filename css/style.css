@@ -57,12 +57,21 @@ body{
     position: absolute;
     top: 0;
     bottom: 0;
-    padding-top: 150px;
     background-color: #F1C232;
     width: 400px;
     z-index: 1;
     list-style: none;
     
+}
+
+.menu-content #logoTimeSac{
+    border:1px solid red;
+    font-size: 60px;   
+    width: 100%;
+    height:150px;
+    margin-top: 20px;
+    margin-bottom:30px;
+ 
 }
 
 #menu:hover .menu-content {
@@ -89,20 +98,21 @@ ul li{
 }
 
 #formProAtivo{
+    display:none;
     padding: 5px;
     font-size: 30px;
     margin:0 auto;
     /*border: 1px solid red;*/
 }
 
-#entradaUser div{
+.entradaUser div{
     width: 900px;
     height: 100px;
     padding: 10px 5px;
    /* border:1px solid red;*/
 }
 
-#entradaUser input{
+.entradaUser input{
     display: inline-table;
     float: right;
     font-size: 60px;
@@ -114,7 +124,7 @@ ul li{
     border: 1px solid rgb(141, 141, 141);
 }
 
-#entradaUser span{
+.entradaUser span{
     font-family: 'Roboto Condensed', sans-serif;
     width:300px;
     font-size: 50px;
@@ -173,12 +183,14 @@ ul li{
 }
 
 #spanRota{
-    margin-top: -100px;
+    margin-top: -130px;
     float: right;
     padding:5px;
     /*border:1px solid red;*/
     font-size: 70px;
     display: block;
-    width: 250px;
+    width: 350px;
 
 }
+
+
