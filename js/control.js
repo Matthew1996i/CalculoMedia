@@ -46,6 +46,11 @@ function calc(e){
     
 }
 
+function mostrarMenu(e){
+    document.getElementById('openMenu').style.display = 'block'
+}
+
+
 
 function reset(){
     document.getElementById('displayMedia').value = ''
