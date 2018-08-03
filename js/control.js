@@ -11,7 +11,7 @@ function calc(e){
     let percentualProjecao = projecao/objetivo
 
     
-   
+
     const calcTrabalho = ()=>{
         if(diasTrabalhados && quantidade >= 1){
             document.getElementById('displayMedia').value = `${Math.floor(mediaProdutividade)} Acionamentos/Dia`
@@ -46,15 +46,6 @@ function calc(e){
     
 }
 
-function mostrarMenu(e){
-    document.getElementById('menu-content').style.display = 'block'
-    
-}
-
-function esconderMenu(){
-    document.getElementById('menu-content').style.display = 'none'
-}
-
 function reset(){
     document.getElementById('displayMedia').value = ''
     document.getElementById('displayMeta').value = ''
@@ -63,6 +54,45 @@ function reset(){
     document.getElementById('amount').value = ''
     document.getElementById('goal').value = ''
     document.getElementById('daysRemaining').value = ''
+}
+
+
+
+
+
+function mostrarMenu(e){
+    document.getElementById('menu-content').style.display = 'block'
+}
+function esconderMenu(){
+    document.getElementById('menu-content').style.display = 'none'
+}
+
+
+const receptivo = ()=>{
+    document.getElementById('formReceptivo').style.display = 'block'
+    document.getElementById('formProAtivo').style.display = 'none'
+    document.getElementById('spanRota').innerHTML = `Receptivo`
+}
+
+const proAtivo = ()=>{
+    document.getElementById('formProAtivo').style.display = 'block'
+    document.getElementById('formReceptivo').style.display = 'none'
+    document.getElementById('spanRota').innerHTML = `Pró-Ativo`
+}
+
+const d0 = ()=>{
+   // document.getElementById('formProAtivo').style.display = 'block'
+    document.getElementById('spanRota').innerHTML = `D-0`
+}
+
+const horas72 = ()=>{
+    //document.getElementById('formProAtivo').style.display = 'block'
+    document.getElementById('spanRota').innerHTML = `72Hrs`
+}
+
+const multi = ()=>{
+    //document.getElementById('formProAtivo').style.display = 'block'
+    document.getElementById('spanRota').innerHTML = `Multi`
 }
 
 
