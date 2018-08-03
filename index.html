@@ -7,10 +7,11 @@
     <script src="js/control.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body> 
+
     <div id="menu">
-        <span>Selecione sua Rota</span>
-        <ul class="dropdown-content">
+        <span>></span>
+        <ul class="menu-content">
             <li id="receptivo">Receptivo</li>
             <li id="proAtivo">ProAtivo</li>
             <li id="d0">D-0</li>
@@ -36,18 +37,25 @@
                 </div>
 
                 <div id="entradaUser">
-                    <span>Dias Trabalhados</span><input id="workedDays" class="interno" type="number" min="1" max="30"><br>
-                    <span>Acionamentos</span><input id="amount" class="interno" type="number" min="1"><br>
-                    <span>Meta Acionamentos Dia</span><input id="goal" class="interno" type="number" min="1"><br>
-                    <span>Dias Restantes</span><input id="daysRemaining" class="interno" type="number" min="0" max="30"><br>
+                    <div><span>Dias Trabalhados:</span><input id="workedDays" class="interno" type="number" min="1" max="30"><br></div>
+                    <div> <span>Acionamentos:</span><input id="amount" class="interno" type="number" min="1"><br></div>
+                    <div> <span>Meta Acionamentos Dia:</span><input id="goal" class="interno" type="number" min="1"><br></div>
+                    <div><span>Dias Restantes:</span><input id="daysRemaining" class="interno" type="number" min="0" max="30"><br></div>
                 </div>
             </div>
 
             <div id="button">
                 <input id="calc" onclick="calc()" type="submit" value="Calcular">
-                <input type="reset" onclick="reset()" value="Reset">
+                <input type="reset" onclick="reset()" value="Limpar">
             </div>
         </div>
+
+
+
+
+
+
+
 
     </div>
 
