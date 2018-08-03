@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html onclick="esconderMenu()">
+<html >
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +9,17 @@
 </head>
 <body> 
 
+    
+
     <div id="menu">
         <span id="openMenu" onclick="mostrarMenu()">></span>
         <ul class="menu-content">
-            <li id="receptivo">Receptivo</li>
-            <li id="proAtivo">ProAtivo</li>
-            <li id="d0">D-0</li>
-            <li id="72Horas">72Hrs</li>
-            <li id="multi">Multi</li>
+            <div id="logoTimeSac">Aqui vem o Logo do time</div>
+                <li id="receptivo" onclick="receptivo()" value="Receptivo">Receptivo</li>
+                <li id="proAtivo" onclick="proAtivo()" value="ProAtivo">ProAtivo</li>
+                <li id="d0" onclick="d0()" value="D-0">D-0</li>
+                <li id="72Horas" onclick="horas72()" value="72Hrs">72Hrs</li>
+                <li id="multi" onclick="multi()" value="Multi">Multi</li>
         </ul>
     </div>
 
@@ -26,8 +29,20 @@
 
     <div id="formulariosRotas">
         
+        <div id="formReceptivo">
+            <input type="checkbox"><span>TV</span>
+            <input type="checkbox"><span>Internet</span>
+            <input type="checkbox"><span>Telefone</span>
+            <input type="checkbox"><span>Multi</span>
+        </div>
+       
+       
+       
+       
+       
+       
         <div id="formProAtivo">
-            
+                       
             <div class="numbersArea">
 
                 <div class="visualizacao">
@@ -36,7 +51,7 @@
                     <div><span>Valor da Faixa:</span><input type="text" id='faixaValor' readonly="true"></div>
                 </div>
 
-                <div id="entradaUser">
+                <div class="entradaUser">
                     <div><span>Dias Trabalhados:</span><input id="workedDays" class="interno" type="number" min="1" max="30"><br></div>
                     <div> <span>Acionamentos:</span><input id="amount" class="interno" type="number" min="1"><br></div>
                     <div> <span>Meta Acionamentos Dia:</span><input id="goal" class="interno" type="number" min="1"><br></div>
@@ -49,13 +64,6 @@
                 <input type="reset" onclick="reset()" value="Limpar">
             </div>
         </div>
-
-
-
-
-
-
-
 
     </div>
 
