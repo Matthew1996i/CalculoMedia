@@ -78,7 +78,7 @@ const proAtivo = ()=>{
     document.getElementById('formProAtivo').style.display = 'block'
     document.getElementById('formReceptivo').style.display = 'none'
     document.getElementById('spanRota').innerHTML = `Pró-Ativo`
-}
+    }
 
 const d0 = ()=>{
    // document.getElementById('formProAtivo').style.display = 'block'
