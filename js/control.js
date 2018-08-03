@@ -47,11 +47,12 @@ function calc(e){
 }
 
 function mostrarMenu(e){
-    document.getElementById('openMenu').style.display = 'block'
+    document.getElementById('menu-content').style.display = 'block'
+    
 }
 
 function esconderMenu(){
-    document.getElementById('openMenu').style.display = 'none'
+    document.getElementById('menu-content').style.display = 'none'
 }
 
 function reset(){
