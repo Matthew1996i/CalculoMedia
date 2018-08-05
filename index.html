@@ -6,26 +6,37 @@
     <title>Calc Media</title>
     <script src="js/control.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-<body> 
+<body class="bg-secondary"> 
 
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning mb-5">
+        <a class="navbar-brand" href="index.html">Angels of the Sales</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
     
-
-    <div id="menu">
-        <span id="openMenu" onclick="mostrarMenu()">></span>
-        <ul class="menu-content">
-            <div id="logoTimeSac">Aqui vem o Logo do time</div>
-                <li id="receptivo" onclick="receptivo()" value="Receptivo">Receptivo</li>
-                <li id="proAtivo" onclick="proAtivo()" value="ProAtivo">ProAtivo</li>
-                <li id="d0" onclick="d0()" value="D-0">D-0</li>
-                <li id="72Horas" onclick="horas72()" value="72Hrs">72Hrs</li>
-                <li id="multi" onclick="multi()" value="Multi">Multi</li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="receptivo()">Receptivo<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#" onclick="proAtivo()">ProAtivo<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="d0()">D-0<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="horas72()">72 Horas<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="multi()">Multi<span class="sr-only">(current)</span></a>
+            </li>        
         </ul>
-    </div>
-
-    <div><span id="spanRota">{ Rota }</span></div>
-    
-
+        </div>
+    </nav>
 
     <div id="formulariosRotas">
         
@@ -68,38 +79,69 @@
                 <span>50GB</span>
             </div>        
         </div>
-       
-       
-       
-       
-       
-       
-        <div id="formProAtivo">
-                       
-            <div class="numbersArea">
-
-                <div class="visualizacao">
-                    <div><span>Media Dia: </span><input type="text" id='displayMedia' readonly="true"><br></div>
-                    <div><span>Media Meta: </span><input type="text" id='displayMeta' readonly="true"><br></div>
-                    <div><span>Valor da Faixa:</span><input type="text" id='faixaValor' readonly="true"></div>
+    
+    
+    <div id="formProAtivo" class="mx-auto py-5 rounded-3">
+        <div class="container fluid p-5">
+                <div class="input-group input-group-lg mb-3">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Media Dia:</span>
+                        </div>
+                        <input id='displayMedia' readonly="true" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
                 </div>
-
-                <div class="entradaUser">
-                    <div><span>Dias Trabalhados:</span><input id="workedDays" class="interno" type="number" min="1" max="30"><br></div>
-                    <div> <span>Acionamentos:</span><input id="amount" class="interno" type="number" min="1"><br></div>
-                    <div> <span>Meta Acionamentos Dia:</span><input id="goal" class="interno" type="number" min="1"><br></div>
-                    <div><span>Dias Restantes:</span><input id="daysRemaining" class="interno" type="number" min="0" max="30"><br></div>
+                <div class="input-group input-group-lg mb-3">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Media Meta:</span>
+                        </div>
+                        <input id='displayMeta' readonly="true" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
                 </div>
+                <div class="input-group input-group-lg mb-3">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Valor da Faixa:</span>
+                        </div>
+                        <input id='faixaValor' readonly="true" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                </div>
+            </div> 
+            <div class="container fluid py-5 px-5">
+
+                    <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Dias Trabalhados:</span>
+                            </div>
+                            <input id="workedDays" type="number" min="1" max="30" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Acionamentos:</span>
+                            </div>
+                            <input id="amount" type="number" min="1" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Meta Acionamentos Dia:</span>
+                            </div>
+                            <input id="goal" type="number" min="1" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Dias Restantes:</span>
+                            </div>
+                            <input id="daysRemaining" type="number" min="0" max="30" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+
             </div>
 
-            <div id="button">
-                <input id="calc" onclick="calc()" type="submit" value="Calcular">
-                <input type="reset" onclick="reset()" value="Limpar">
+            <div id="button" class="container mx-auto px-5 py-3">
+                <button id="calc" onclick="calc()" type="button" class="btn btn-success btn-lg mr-3">Calcular</button>
+                <button onclick="reset()" type="button" class="btn btn-danger btn-lg">Limpar</button>
             </div>
         </div>
 
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>
